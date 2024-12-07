@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Lemon&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nova+Round&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Ubuntu:ital,wght@0,700;1,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Lemon&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nova+Round&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik+Mono+One&family=Ubuntu:ital,wght@0,700;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", sans-serif;
+  /* font-family: "Rubik Mono One", monospace; */
+}
+
+.container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Laptop Size */
+@media (min-width: 320px) {
+  /* Navigation Bar ---------------------------------------------------- */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 25px 50px;
+    width: 90%;
+    margin-top: 10px;
+    border-radius: 50px;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    right: 0;
+  }
+
+  /* Logo */
+  .navbar .page_logo > a {
+    color: white;
+    text-decoration: none;
+  }
+
+  /* Navbar Links */
+  .navbar > ul {
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  .navbar > ul > li > a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  #contact_btn {
+    font-weight: 900;
+    padding: 10px 15px;
+    border: 2px solid white;
+    border-radius: 40px;
+    transition: 0.5s ease;
+  }
+
+  #contact_btn:hover {
+    transform: translateY(3px);
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.685);
+  }
+
+  /* Hero section ----------------------------------------------------------*/
+  .hero_section {
+    height: 100vh;
+    background-image: url(images/herobg3.jpg);
+    background-size: cover;
+  }
+
+  .hero_contents {
+    display: flex;
+    margin-left: 10%;
+    height: 100%;
+  }
+
+  /* Hero Infos -----------------*/
+  .hero_info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    width: 60%;
+  }
+
+  .hero_info .title > h1 {
+    min-width: 400px;
+    font-size: 60px;
+    font-family: "Rubik Mono One", monospace;
+  }
+
+  .hero_info .title > p {
+    max-width: 800px;
+    font-size: 25px;
+    font-weight: 400;
+    padding-top: 10px;
+  }
+
+  /* Hero Image ---------------------*/
+  .hero_image {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    overflow: hidden;
+  }
+
+  .hero_image > img {
+    max-width: 180%;
+    filter: drop-shadow(4px 25px 5px rgba(0, 0, 0, 0.575));
+  }
+
+  /* Hero Button -------------------- */
+  .herobtn {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .herobtn > a {
+    text-decoration: none;
+    color: black;
+    background-color: #ffb15b;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    transition: 0.2s ease;
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.575);
+  }
+
+  .herobtn > a:hover {
+    transform: translate(0px, -5px);
+    color: white;
+    background-color: #000000;
+    transform: scale(1.1, 1.1);
+  }
+
+  .herobtn > i {
+    font-size: 30px;
+  }
+
+  /* Social Links -------------------- */
+
+  .social_links {
+    display: flex;
+    margin-left: 15px;
+    margin-top: 5px;
+    gap: 30px;
+  }
+
+  .social_links > a {
+    color: black;
+    font-size: 50px;
+    transition: 0.2s;
+  }
+
+  .social_links > a:hover {
+    transform: translate(0px, -5px);
+    transform: scale(1.5, 1.5);
+  }
+}
