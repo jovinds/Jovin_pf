@@ -8,6 +8,7 @@
   text-decoration: none;
   box-sizing: border-box;
   font-family: "Roboto Mono", sans-serif;
+  scroll-behavior: smooth;
   /* font-family: "Rubik Mono One", monospace; */
 }
 
@@ -24,7 +25,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: black;
+    background-color: #1b1b1b;
     padding: 25px 50px;
     width: 90%;
     margin-top: 10px;
@@ -65,9 +66,9 @@
 
   #contact_btn:hover {
     transform: translateY(3px);
-    color: black;
+    color: #1b1b1b;
     background-color: white;
-    border: 2px solid black;
+    border: 2px solid #1b1b1b;
     box-shadow: 0 0 30px rgba(255, 255, 255, 0.685);
   }
 
@@ -83,8 +84,33 @@
 
   .hero_contents {
     display: flex;
+    height: 100vh;
     margin-left: 10%;
     height: 100%;
+  }
+
+  .hero_section .arrow_down {
+    font-size: 40px;
+    position: absolute;
+    right: 50%;
+    top: 90%;
+    animation: arrowdown_breath 2s infinite;
+  }
+
+  .hero_section .arrow_down > a {
+    color: #1b1b1b;
+  }
+
+  @keyframes arrowdown_breath {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
   }
 
   /* Hero Infos -----------------*/
@@ -131,7 +157,7 @@
 
   .herobtn > a {
     text-decoration: none;
-    color: black;
+    color: #1b1b1b;
     background-color: #ffb15b;
     font-size: 25px;
     font-weight: bold;
@@ -145,7 +171,7 @@
   .herobtn > a:hover {
     transform: translate(0px, -5px);
     color: white;
-    background-color: #000000;
+    background-color: #1b1b1b;
     transform: scale(1.1, 1.1);
   }
 
@@ -163,7 +189,7 @@
   }
 
   .social_links > a {
-    color: black;
+    color: #1b1b1b;
     font-size: 50px;
     transition: 0.2s;
   }
@@ -175,7 +201,31 @@
   /* Project Section -----------------------------------------------------*/
 
   .projects {
-    background-color: #000000;
+    /* background: linear-gradient(
+      330deg,
+      #1b1b1b,
+      #1b1b1b,
+      #1b1b1b,
+      #ffb15b,
+      #ffb15b,
+      #1b1b1b,
+      #1b1b1b
+    );
+    background-size: 200% 200%;
+    animation: bgcolor 10s ease-in-out infinite; */
+    background-color: #1b1b1b;
+  }
+
+  @keyframes bgcolor {
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
   }
 
   .projects > h1 {
@@ -204,9 +254,10 @@
     height: 300px;
     width: 600px;
   }
-  
+
   .project_image > a > img {
     width: 100%;
+    border-radius: 20px;
     max-width: 600px;
     min-width: 200px;
     height: auto;
@@ -215,7 +266,7 @@
 
   .project_image > a > img:hover {
     transform: translateY(-7px);
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.822);
+    box-shadow: 0 0 20px rgba(255, 255, 254, 0.822);
   }
 
   .project_info {
@@ -247,6 +298,20 @@
     font-size: 20px;
     border: 2px solid;
     border-radius: 10px;
+    transition: 0.2s;
   }
 
+  .project_info #visit_link:hover {
+    background-color: #ffb15b;
+    color: #1b1b1b;
+  }
+
+  footer {
+    display: flex;
+    background-color: #1b1b1b;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px 20px 0px;
+  }
 }

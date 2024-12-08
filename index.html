@@ -13,16 +13,19 @@
   <body>
     <nav class="navbar container">
       <div class="page_logo">
-        <a href="#"><h1>JOVIN</h1></a>
+        <a href="#hero"><h1>JOVIN</h1></a>
       </div>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Projects</a></li>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a id="contact_btn" href="#">Contact me</a></li>
       </ul>
     </nav>
     <main>
-      <section class="hero_section container">
+      <section class="hero_section container" id="hero">
+        <div class="arrow_down">
+          <a href="#projects"><i class="fa-solid fa-angles-down"></i></a>
+        </div>
         <div class="hero_contents">
           <div class="hero_info">
             <div class="title">
@@ -40,7 +43,6 @@
               <a href="myfiles/CV_delossantos.pdf" target="_blank"
                 >View my Resumé</a
               >
-              <i class="fa-solid fa-angles-right"></i>
             </div>
             <div class="social_links">
               <a
@@ -62,7 +64,7 @@
           </div>
         </div>
       </section>
-      <section class="projects container">
+      <section class="projects container" id="projects">
         <h1>Previous Works</h1>
         <div class="project_cards">
           <div class="card">
@@ -73,12 +75,42 @@
             </div>
             <div class="project_info">
               <a href="https://jovinds.github.io/foodi/" target="_blank"
-                ><h1>Face Recognition-Based Attendance Monitoring System</h1></a
+                ><h1>"Foodi: Culinary Artistry, Perfected"</h1></a
               >
               <p>
-                The Foodi website combines a modern, clean design with intuitive navigation to showcase its delectable menu and services.
+                The Foodi website combines a modern, clean design with intuitive
+                navigation to showcase its delectable menu and services.
               </p>
-              <a id="visit_link" href="https://jovinds.github.io/foodi/" target="_blank">Visit Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a
+                id="visit_link"
+                href="https://jovinds.github.io/foodi/"
+                target="_blank"
+                >Visit Site
+                <i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="project_image">
+              <a href="https://jovinds.github.io/Keithston-Bakery-Website/" target="_blank"
+                ><img src="images/keithston-page.png" alt="project-image"
+              /></a>
+            </div>
+            <div class="project_info">
+              <a href="https://jovinds.github.io/Keithston-Bakery-Website/" target="_blank"
+                ><h1>"Keithston Café - Sweet Treats and Perfect Eats"</h1></a
+              >
+              <p>
+                The Foodi website combines a modern, clean design with intuitive
+                navigation to showcase its delectable menu and services.
+              </p>
+              <a
+                id="visit_link"
+                href="https://jovinds.github.io/Keithston-Bakery-Website/"
+                target="_blank"
+                >Visit Site
+                <i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
             </div>
           </div>
           <div class="card">
@@ -95,11 +127,20 @@
                 An efficient program designed to help schools, colleges, and
                 businesses track and manage attendance.
               </p>
-              <a id="visit_link" href="https://github.com/jovinds/design1-Raspi" target="_blank">Visit Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a
+                id="visit_link"
+                href="https://github.com/jovinds/design1-Raspi"
+                target="_blank"
+                >Visit Site
+                <i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
             </div>
           </div>
         </div>
       </section>
+      <footer class="container">
+        <h3>© 2024 John Vincent De los Santos. All Rights Reserved.</h3>
+      </footer>
     </main>
     <script>
       const images = [
