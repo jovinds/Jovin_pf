@@ -175,7 +175,6 @@
   /* Project Section -----------------------------------------------------*/
 
   .projects {
-    height: 100vh;
     background-color: #000000;
   }
 
@@ -186,6 +185,12 @@
     text-align: center;
     padding: 80px;
     color: white;
+  }
+
+  .project_cards {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
   }
 
   .card {
@@ -200,7 +205,6 @@
     width: 600px;
   }
   
-
   .project_image > a > img {
     width: 100%;
     max-width: 600px;
@@ -211,27 +215,38 @@
 
   .project_image > a > img:hover {
     transform: translateY(-7px);
-    box-shadow: 0 0 50px rgba(255, 255, 255, 0.822);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.822);
   }
 
   .project_info {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 15px;
+    gap: 30px;
     max-width: 700px;
     min-width: 300px;
     color: white;
   }
 
   .project_info > a > h1 {
-    color: #ffb15b;
+    color: #ffffff;
     font-family: "Rubik Mono One", monospace;
-    font-weight: 300;
-    font-size: 30px;
+    font-weight: 400;
+    font-size: 25px;
   }
 
   .project_info > p {
     font-size: 1.4rem;
   }
+
+  .project_info #visit_link {
+    width: 180px;
+    text-align: center;
+    padding: 5px 10px;
+    color: #ffb15b;
+    font-size: 20px;
+    border: 2px solid;
+    border-radius: 10px;
+  }
+
 }
