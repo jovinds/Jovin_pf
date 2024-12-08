@@ -23,10 +23,10 @@
     </nav>
     <main>
       <section class="hero_section container">
-        <hero class="hero_contents">
+        <div class="hero_contents">
           <div class="hero_info">
             <div class="title">
-              <h1>Hello there, <br>I'm Vince</h1>
+              <h1>Hello there, <br />I'm Vince</h1>
               <p>
                 Here, you can check my previous works and personal projects. If
                 any of these align with your vision or project needs, I’d be
@@ -34,25 +34,74 @@
               </p>
             </div>
             <div class="herobtn">
-              <a href="mailto:jovinds24@gmail.com" target="_blank">Contact me</a>
-              <a href="./CV_delossantos.pdf" target="_blank">View my Resumé</a>
+              <a href="mailto:jovinds24@gmail.com" target="_blank"
+                >Contact me</a
+              >
+              <a href="myfiles/CV_delossantos.pdf" target="_blank"
+                >View my Resumé</a
+              >
               <i class="fa-solid fa-angles-right"></i>
             </div>
             <div class="social_links">
-              <a href="https://www.linkedin.com/in/jvdelossantos/" target="_blank"
+              <a
+                href="https://www.linkedin.com/in/jvdelossantos/"
+                target="_blank"
+                title="linkedin"
                 ><i class="fa-brands fa-linkedin"></i
               ></a>
               <a href="https://github.com/jovinds" target="_blank"
                 ><i class="fa-brands fa-github"></i
               ></a>
-              <a href="https://www.instagram.com/ecnnniv/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+              <a href="https://www.instagram.com/ecnnniv/" target="_blank"
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
             </div>
           </div>
           <div class="hero_image">
             <img src="images/hero-image.png" alt="hero-image" />
           </div>
-        </hero>
+        </div>
+      </section>
+      <section class="projects container">
+        <h1>Previous Works</h1>
+        <div class="project_cards">
+          <div class="card">
+            <div class="project_image">
+              <a href="https://github.com/jovinds/design1-Raspi" target="_blank"
+                ><img id="projectImg" src="images/cms.jpg" alt="project-image"
+              /></a>
+            </div>
+            <div class="project_info">
+              <a href="https://github.com/jovinds/design1-Raspi"
+                ><h1>Face Recognition-Based Attendance Monitoring System</h1></a
+              >
+              <p>
+                An efficient program designed to help schools, colleges, and
+                businesses track and manage attendance. With features such as
+                automated attendance recording, real-time attendance updates,
+                and customizable reports, this system streamlines attendance
+                management and ensures accurate records.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
+    <script>
+      const images = [
+        "images/face-recog.jpg",
+        "images/cms2.jpg",
+        "images/face-recog2.jpg" 
+      ];
+
+      let currentImageIndex = 0;
+
+      function changeImage() {
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+        document.getElementById("projectImg").src = images[currentImageIndex];
+      }
+
+      setInterval(changeImage, 2000);
+    </script>
   </body>
 </html>

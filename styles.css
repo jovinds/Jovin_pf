@@ -5,6 +5,7 @@
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
   box-sizing: border-box;
   font-family: "Roboto Mono", sans-serif;
   /* font-family: "Rubik Mono One", monospace; */
@@ -74,7 +75,10 @@
   .hero_section {
     height: 100vh;
     background-image: url(images/herobg3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
+    box-shadow: inset 0px -15px 20px rgba(0, 0, 0, 0.5);
   }
 
   .hero_contents {
@@ -165,7 +169,69 @@
   }
 
   .social_links > a:hover {
-    transform: translate(0px, -5px);
     transform: scale(1.5, 1.5);
+  }
+
+  /* Project Section -----------------------------------------------------*/
+
+  .projects {
+    height: 100vh;
+    background-color: #000000;
+  }
+
+  .projects > h1 {
+    font-size: 60px;
+    font-family: "Rubik Mono One", monospace;
+    text-decoration: underline;
+    text-align: center;
+    padding: 80px;
+    color: white;
+  }
+
+  .card {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+
+  #projectImg {
+    height: 300px;
+    width: 600px;
+  }
+  
+
+  .project_image > a > img {
+    width: 100%;
+    max-width: 600px;
+    min-width: 200px;
+    height: auto;
+    transition: 0.2s;
+  }
+
+  .project_image > a > img:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.822);
+  }
+
+  .project_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    max-width: 700px;
+    min-width: 300px;
+    color: white;
+  }
+
+  .project_info > a > h1 {
+    color: #ffb15b;
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 300;
+    font-size: 30px;
+  }
+
+  .project_info > p {
+    font-size: 1.4rem;
   }
 }
