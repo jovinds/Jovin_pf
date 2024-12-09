@@ -11,15 +11,18 @@
     ></script>
   </head>
   <body>
-    <nav class="navbar container">
+    <nav class="navbar container" id="navbar">
       <div class="page_logo">
         <a href="#hero"><h1>JOVIN</h1></a>
       </div>
       <ul>
         <li><a href="#hero">Home</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a id="contact_btn" href="#">Contact me</a></li>
+        <li><a href="#">Extras</a></li>
       </ul>
+      <a id="contact_btn" href="mailto:jovinds24@gmail.com" target="_blank"
+        >Contact me</a
+      >
     </nav>
     <main>
       <section class="hero_section container" id="hero">
@@ -29,7 +32,10 @@
         <div class="hero_contents">
           <div class="hero_info">
             <div class="title">
-              <h1>Hello there, <br />I'm Vince</h1>
+              <h1>
+                Hello there, <br />
+                <h1 id="my_name">I'm Vince</h1>
+              </h1>
               <p>
                 Here, you can check my previous works and personal projects. If
                 any of these align with your vision or project needs, I’d be
@@ -40,9 +46,7 @@
               <a href="mailto:jovinds24@gmail.com" target="_blank"
                 >Contact me</a
               >
-              <a href="myfiles/CV_delossantos.pdf" target="_blank"
-                >View my Resumé</a
-              >
+              <a href="myfiles/CV_Vince.pdf" target="_blank">View my Resumé</a>
             </div>
             <div class="social_links">
               <a
@@ -92,12 +96,16 @@
           </div>
           <div class="card">
             <div class="project_image">
-              <a href="https://jovinds.github.io/Keithston-Bakery-Website/" target="_blank"
+              <a
+                href="https://jovinds.github.io/Keithston-Bakery-Website/"
+                target="_blank"
                 ><img src="images/keithston-page.png" alt="project-image"
               /></a>
             </div>
             <div class="project_info">
-              <a href="https://jovinds.github.io/Keithston-Bakery-Website/" target="_blank"
+              <a
+                href="https://jovinds.github.io/Keithston-Bakery-Website/"
+                target="_blank"
                 ><h1>"Keithston Café - Sweet Treats and Perfect Eats"</h1></a
               >
               <p>
@@ -138,6 +146,10 @@
           </div>
         </div>
       </section>
+      <section class="extras container">
+        <h1></h1>
+        <div class="graphic_card"></div>
+      </section>
       <footer class="container">
         <h3>© 2024 John Vincent De los Santos. All Rights Reserved.</h3>
       </footer>
@@ -157,6 +169,22 @@
       }
 
       setInterval(changeImage, 2000);
+    </script>
+    <script>
+      let lastScrollTop = 0;
+      const navbar = document.getElementById("navbar");
+
+      window.addEventListener("scroll", function () {
+        let scrollTop =
+          window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop) {
+          navbar.style.top = "-200px";
+        } else {
+          navbar.style.top = "0";
+        }
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+      });
     </script>
   </body>
 </html>
