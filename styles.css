@@ -25,8 +25,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #1b1b1b;
-    padding: 25px 30px 25px 50px;
+    background-color: #2e2e2e;
+    padding: 10px 30px 10px 50px;
     width: 90%;
     margin-top: 10px;
     border-radius: 50px;
@@ -72,9 +72,9 @@
 
   #contact_btn:hover {
     transform: translateY(3px);
-    color: #1b1b1b;
+    color: #2e2e2e;
     background-color: white;
-    border: 2px solid #1b1b1b;
+    border: 2px solid #2e2e2e;
     box-shadow: 0 0 30px rgba(255, 255, 255, 0.685);
   }
 
@@ -86,6 +86,17 @@
     background-position: center;
     background-size: cover;
     box-shadow: inset 0px -15px 20px rgba(0, 0, 0, 0.5);
+  }
+
+  .title > h1 {
+    position: relative;
+  }
+
+  .title > h1 > img {
+    position: absolute;
+    top: -75px;
+    left: 0px;
+    width: 100px;
   }
 
   .hero_contents {
@@ -104,7 +115,7 @@
   }
 
   .hero_section .arrow_down > a {
-    color: #1b1b1b;
+    color: #2e2e2e;
   }
 
   @keyframes arrowdown_breath {
@@ -168,7 +179,7 @@
 
   .herobtn > a {
     text-decoration: none;
-    color: #1b1b1b;
+    color: #2e2e2e;
     background-color: #ffb15b;
     font-size: 25px;
     font-weight: bold;
@@ -182,7 +193,7 @@
   .herobtn > a:hover {
     transform: translate(0px, -5px);
     color: white;
-    background-color: #1b1b1b;
+    background-color: #2e2e2e;
     transform: scale(1.1, 1.1);
   }
 
@@ -200,7 +211,7 @@
   }
 
   .social_links > a {
-    color: #1b1b1b;
+    color: #2e2e2e;
     font-size: 50px;
     transition: 0.2s;
   }
@@ -212,19 +223,19 @@
   /* Project Section -----------------------------------------------------*/
 
   .projects {
+    background-color: #2e2e2e;
     /* background: linear-gradient(
       330deg,
-      #1b1b1b,
-      #1b1b1b,
-      #1b1b1b,
-      #ffb15b,
-      #ffb15b,
-      #1b1b1b,
-      #1b1b1b
+      #010101,
+      #2e2e2e,
+      #1e0f00,
+      #6f3e0a,
+      #ca7112,
+      #2e2e2e,
+      #2e2e2e
     );
     background-size: 200% 200%;
     animation: bgcolor 10s ease-in-out infinite; */
-    background-color: #1b1b1b;
   }
 
   @keyframes bgcolor {
@@ -260,11 +271,20 @@
     justify-content: center;
     gap: 50px;
     flex-wrap: wrap;
+    position: relative;
   }
 
   #projectImg {
-    height: 300px;
-    width: 600px;
+    max-width: 600px;
+    min-width: 200px;
+  }
+
+  .project_image > img {
+    max-width: 600px;
+    min-width: 200px;
+    position: absolute;
+    top: 0;
+    left: -50px;
   }
 
   .project_image > a > img {
@@ -314,26 +334,112 @@
 
   .project_info #visit_link:hover {
     background-color: #ffb15b;
-    color: #1b1b1b;
+    color: #2e2e2e;
   }
 
   /* Extras Section --------------------------- */
 
-  .graphic_card {
+  .extras {
     background-image: url(images/herobg3.jpg);
     background-size: cover;
+    position: relative;
   }
-  .graphic_card > img {
-    max-width: 1000px;
+
+  .animation > img {
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+  }
+
+  .extras > h1 {
+    font-size: 60px;
+    color: #2e2e2e;
+    font-family: "Rubik Mono One", monospace;
+    text-decoration: underline;
+    text-align: center;
+    padding: 40px 80px 0px;
+  }
+
+  .extras > h3 {
+    font-size: 30px;
+    color: #2e2e2e;
+    padding: 15px 80px 0px;
+    text-align: center;
+  }
+
+  .extra_cards {
+    display: grid;
+    justify-content: center;
+    width: auto;
+    position: relative;
+    z-index: 2;
+    padding: 50px 90px 90px;
+    gap: 20px;
+    grid-template-columns: repeat(4, minmax(0, 600px));
+    grid-template-rows: repeat(auto, 1fr);
+  }
+
+  .extra_card {
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    background-color: #2e2e2e;
+    align-items: center;
+    border: 20px solid #2e2e2e;
+    overflow: hidden;
+    border-radius: 20px;
+    transition: 0.2s;
+    min-width: 300px;
+  }
+
+  .extra_card:hover {
+    transform: translateY(-10px);
+  }
+
+  .extra_card > h1 {
+    display: flex;
+    align-items: center;
+    padding: 20px 0px 10px;
+  }
+
+  .extra_card > a {
+    color: #ffb15b;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 2px solid #ffb15b;
+    transition: 0.2s;
+  }
+
+  .extra_card > a:hover {
+    background-color: #ffb15b;
+    color: #2e2e2e;
+  }
+
+  .extra_card > .extra_image > a > img {
+    max-width: 560px;
+    transition: 0.2s;
   }
 
   /* Footer Section ---------------------------------------------------- */
   footer {
     display: flex;
-    background-color: #1b1b1b;
+    background-color: #2e2e2e;
     color: white;
     justify-content: center;
     align-items: center;
-    padding: 100px 0px 20px 0px;
+    padding: 50px 0px 20px 0px;
+    background: linear-gradient(
+      330deg,
+      #010101,
+      #2e2e2e,
+      #1e0f00,
+      #6f3e0a,
+      #ca7112,
+      #2e2e2e,
+      #2e2e2e
+    );
+    background-size: 200% 200%;
+    animation: bgcolor 10s ease-in-out infinite;
   }
 }

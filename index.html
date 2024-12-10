@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jovin</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="icon" href="images/favicon-32x32.png">
     <script
       src="https://kit.fontawesome.com/ca430043f7.js"
       crossorigin="anonymous"
@@ -18,7 +19,7 @@
       <ul>
         <li><a href="#hero">Home</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#">Extras</a></li>
+        <li><a href="#extras">Extras</a></li>
       </ul>
       <a id="contact_btn" href="mailto:jovinds24@gmail.com" target="_blank"
         >Contact me</a
@@ -33,9 +34,9 @@
           <div class="hero_info">
             <div class="title">
               <h1>
-                Hello there, <br />
-                <h1 id="my_name">I'm Vince</h1>
+                Hello there, <img src="animations/sleep.gif" alt="" /><br />
               </h1>
+              <h1 id="my_name">I'm Vince</h1>
               <p>
                 Here, you can check my previous works and personal projects. If
                 any of these align with your vision or project needs, I’d be
@@ -139,27 +140,85 @@
                 id="visit_link"
                 href="https://github.com/jovinds/design1-Raspi"
                 target="_blank"
-                >Visit Site
-                <i class="fa-solid fa-arrow-up-right-from-square"></i
+                >Github <i class="fa-solid fa-arrow-up-right-from-square"></i
               ></a>
             </div>
           </div>
         </div>
       </section>
-      <section class="extras container">
-        <h1></h1>
-        <div class="graphic_card"></div>
+      <section class="extras container" id="extras">
+        <div class="animation">
+          <img src="animations/paperplane.gif" alt="" />
+        </div>
+        <h1>Extras</h1>
+        <h3>
+          Here’s a selection of some of my design projects, highlighting various
+          styles and concepts. Feel free to browse through. I hope you enjoy!
+        </h3>
+        <div class="extra_cards">
+          <div class="extra_card">
+            <div class="extra_image">
+              <a
+                href="https://www.behance.net/gallery/214333493/Bon-n-Bons-Ice-Cream"
+                target="_blank"
+                ><img src="images/bonbons.png" alt=""
+              /></a>
+            </div>
+            <h1>Product Design</h1>
+            <a
+              href="https://www.behance.net/gallery/214333493/Bon-n-Bons-Ice-Cream" target="_blank"
+              >Visit Site <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </div>
+          <div class="extra_card">
+            <div class="extra_image">
+              <a
+                href="https://www.behance.net/gallery/214334389/Hiring-Post"
+                target="_blank"
+                ><img src="images/hiring-poster.png" alt=""
+              /></a>
+            </div>
+            <h1>Media Post Design</h1>
+            <a href="https://www.behance.net/gallery/214334389/Hiring-Post" target="_blank"
+              >Visit Site <i class="fa-solid  fa-arrow-up-right-from-square"></i
+            ></a>
+          </div>
+          <div class="extra_card">
+            <div class="extra_image">
+              <a
+                href="https://www.behance.net/gallery/205016147/Peaks-of-Serenity"
+                target="_blank"
+                ><img src="images/illustration.png" alt=""
+              /></a>
+            </div>
+            <h1>Illustration</h1>
+            <a
+              href="https://www.behance.net/gallery/205016147/Peaks-of-Serenity" target="_blank"
+              >Visit Site <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </div>
+          <div class="extra_card">
+            <div class="extra_image">
+              <a
+                href="https://www.behance.net/gallery/214333825/Hot-Instant-Noodle"
+                target="_blank"
+                ><img src="images/illustration2.png" alt=""
+              /></a>
+            </div>
+            <h1>Character Design</h1>
+            <a
+              href="https://www.behance.net/gallery/214333825/Hot-Instant-Noodle" target="_blank"
+              >Visit Site <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </div>
+        </div>
       </section>
       <footer class="container">
         <h3>© 2024 John Vincent De los Santos. All Rights Reserved.</h3>
       </footer>
     </main>
     <script>
-      const images = [
-        "images/face-recog.jpg",
-        "images/cms2.jpg",
-        "images/face-recog2.jpg",
-      ];
+      const images = ["images/face-recog.jpg", "images/face-recog2.jpg"];
 
       let currentImageIndex = 0;
 
