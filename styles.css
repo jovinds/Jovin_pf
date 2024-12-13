@@ -152,7 +152,7 @@
     left: 0px;
     width: clamp(20px, 20vw, 100px);
   }
-  
+
   .hero_info .title > p {
     max-width: 800px;
     font-size: clamp(20px, 1.6vw, 40px);
