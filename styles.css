@@ -129,6 +129,7 @@
     margin-top: 5%;
     gap: 30px;
     width: 60%;
+    transform: translate(120px, 10px);
   }
 
   .title > h1 {
@@ -163,14 +164,16 @@
   /* Hero Image ---------------------*/
   .hero_image {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     width: 40%;
-    overflow: hidden;
+    position: relative;
   }
 
   .hero_image > img {
-    max-width: 180%;
-    filter: drop-shadow(4px 25px 5px rgba(0, 0, 0, 0.575));
+    position: absolute;
+    margin-bottom: 0;
+    max-width: 100%;
+    display: block;
   }
 
   /* Hero Button -------------------- */
@@ -537,5 +540,4 @@
   .hero_image {
     display: none;
   }
-
 }
